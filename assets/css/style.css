@@ -1,0 +1,228 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.card-container {
+    padding: 2rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1000px;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personal-details-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.profile-icon .fas {
+    font-size: 2rem;
+    color: #b0b0b0;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-right: 2rem;
+    border-right: 1px solid #e0e0e0;
+}
+
+.aura-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.aura-section p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.contact-info .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info .contact-item i {
+    color: #4a90e2;
+}
+
+.contact-info .contact-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.bottom-contact h3 {
+    margin-top: 0;
+}
+
+.center-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    border-right: 1px solid pink;
+}
+
+.aura-photo-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+}
+
+.gradient-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    border-radius: 50%;
+    transform: scale(1.1);
+    z-index: 1;
+    filter: blur(10px);
+}
+
+.aura-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.education-history {
+    width: 100%;
+}
+
+.education-history h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.education-history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.education-history li {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.education-history li .bullet {
+    width: 8px;
+    height: 8px;
+    background-color: #888;
+    border-radius: 50%;
+    margin-left: auto;
+}
+
+.right-column {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right-column .ig-media img{
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  width:80px;
+}
+
+.right-column .tiktok-media img{
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  width: 80px;
+}
+
+.tiktok-media p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 2rem 1rem;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .left-column, .center-column {
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .center-column {
+        border-top: 1px solid pink;
+        padding-top: 2rem;
+    }
+
+    .right-column {
+        flex-direction: row;
+        justify-content: space-around;
+        border-top: 1px solid #e0e0e0;
+        padding-top: 2rem;
+    }
+}
